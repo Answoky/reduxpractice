@@ -7,5 +7,5 @@ export interface Action {
 }
 
 export interface Reducer<T> {
-    (): T
+    ( state: T, action: Action ): T
 }
